@@ -19,13 +19,13 @@ hr {
 
 
 .center {
-  font-family: 'Monoton', sans-serif;
-  transform: translateY(45%);
-  text-align: center;
-  position: fixed;
-  margin: 0px auto;
-  width: 100%;
-  z-index: 1;
+    font-family: 'Monoton',sans-serif;
+    padding-top: 65px;
+    text-align: center;
+    position: fixed;
+    margin: 0px auto;
+    width: 100%;
+    z-index: 1;
 }
 
 .center h1 {
