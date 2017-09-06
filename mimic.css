@@ -1,0 +1,685 @@
+/* 
+================================================
+
+mimic.css 
+http://erictreacy.me/mimic.css
+MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2017 voneags (Eric Treacy)
+
+================================================
+*/
+
+
+.animated {
+  animation-fill-mode: both;
+}
+
+
+/*
+==============================================
+
+boomerang
+ 
+==============================================
+*/
+
+@keyframes boomerang {
+  10% {
+    z-index: 1;
+    transform: rotate(-20deg);
+  }
+  35% {
+    z-index: 1;
+    transform: translate(220%, -55%) scale(0.5) rotate(-200deg);
+  }
+  74% {
+    z-index: -1;
+  }
+  75% {
+    transform: translate(-200%, 55%) scale(0.9) rotate(-860deg);
+  }
+  80% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 1;
+    transform: translate(0%, 0%) rotate(-10deg);
+  }
+}
+
+.boomerang {
+  animation-name: boomerang;
+  animation-duration: 3s;
+}
+
+
+/*
+=========================================================
+
+swivel chair
+
+=========================================================
+*/
+
+@keyframes swivelChair {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.swivelChair {
+  animation-name: swivelChair;
+  animation-duration: 2s;
+}
+
+/* 
+===========================================
+
+gettin' in yo Face 
+ 
+===========================================
+*/
+
+@keyframes gettinInYoFace {
+  from {
+    opacity: 1;
+    transform: perspective(400px) scale(1.0);
+  }
+
+  to {
+    opacity: 1;
+    transform: perspective(400px) scale(100.0);
+  }
+}
+
+.gettinInYoFace {
+  animation-timing-function: ease-in-out;
+  animation-name: gettinInYoFace;
+  animation-duration: 3s;
+}
+
+
+
+/*
+=============================================
+
+airplane propeller 
+
+=============================================
+*/
+
+@keyframes airplanePropeller {
+  from {
+    transform-origin: center;
+    transform: rotate(-20000deg);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.airplanePropeller {
+  animation-name: airplanePropeller;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+/*
+======================================
+
+ pulsate 
+ 
+======================================
+*/
+
+@-webkit-keyframes pulsate {
+  from {
+    opacity: 1.0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1.0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1.0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1.0;
+  }
+  90% {
+    opacity: 0;
+  }
+  to {}
+}
+
+.pulsate {
+  animation-name: pulsate;
+  animation-duration: 5s;
+}
+
+/*
+=====================================
+
+ candle in the wind 
+ 
+=====================================
+*/
+
+@keyframes candleInTheWind {
+  0% {
+    opacity: 0;
+  }
+
+  12.5% {
+    opacity: .25;
+    transform: skewX(-10deg);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37.5% {
+    opacity: 0;
+    transform: skewX(-10deg);
+  }
+
+  50% {
+    opacity: .75;
+  }
+
+  62.5% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+    transform: skewX(-5deg);
+  }
+
+  87.5% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.candleInTheWind {
+  opacity: 0;
+  animation-name: candleInTheWind;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+
+
+/*
+=======================================
+
+ highlighter 
+ 
+=======================================
+*/
+
+@keyframes highlighter {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(0, 255, 255, 128);
+  }
+
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(127, 219, 255, 0);
+  }
+}
+
+@keyframes highlighter-text {
+  0% {
+    color: yellow;
+    color: #0074d9;
+  }
+
+  100% {
+    color: inherit;
+  }
+}
+
+.highlighter {
+  animation-name: highlighter;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.highlight-text {
+  animation-name: highlighter-text;
+  animation-duration: 2s;
+}
+
+/*
+=======================================
+
+lawnmower 
+
+=======================================
+*/
+
+@keyframes lawnMower {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateY(12225deg);
+  }
+}
+
+.lawnMower {
+  animation-duration: 5s;
+  animation-name: lawnMower;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+/*
+=======================================
+
+bungee
+ 
+=======================================
+*/
+
+@keyframes bungee {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(.1, .1, .1);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bungee {
+  animation-name: bungee;
+  animation-duration: 2s;
+   animation-timing-function: ease-in-out;
+}
+
+
+/*
+=======================================
+
+nope
+
+=======================================
+*/
+
+@keyframes nope {
+  0% {
+    transform: translateX(0);
+  }
+
+  6.5% {
+    transform: translateX(-7px) rotateY(-10deg);
+  }
+
+  18.5% {
+    transform: translateX(6px) rotateY(8deg);
+  }
+
+  31.5% {
+    transform: translateX(-4px) rotateY(-6deg);
+  }
+
+  43.5% {
+    transform: translateX(3px) rotateY(4deg);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.nope {
+  animation-name: nope;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*
+=======================================
+
+heartbeat
+
+=======================================
+*/
+
+@keyframes heartBeat {
+  from {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.heartBeat {
+  animation-name: heartBeat;
+  animation: heartBeat 0.66s alternate;
+  animation-iteration-count: 8;
+}
+
+
+
+/*
+=======================================
+
+sleepy eyes 
+
+=======================================
+*/
+
+@keyframes sleepyEyes {
+  0% {
+    transform: perspective(400px);
+  }
+  5% {
+    transform: perspective(400px) rotateX(-20deg);
+    opacity: 0.5;
+  }
+  15% {
+    transform: perspective(400px);
+    opacity: 1;
+  }
+  35% {
+    transform: perspective(400px) rotateX(-20deg);
+    opacity: 0.75;
+  }
+
+  45% {
+    transform: perspective(400px) rotateX(-2deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: perspective(400px) rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
+.sleepyEyes {
+  animation-name: sleepyEyes;
+  animation-duration: 5s;
+  backface-visibility: visible !important;
+}
+
+
+/*
+=======================================
+
+ plummit 
+ 
+=======================================
+*/
+
+@keyframes plummit {
+  from {
+    opacity: 1;
+    transform: scale(10);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+
+.plummit {
+  animation-timing-function: ease-in-out;
+  animation-name: plummit;
+  animation-duration: 5s;
+}
+
+
+
+/*
+=======================================
+
+drop it like it's hot 
+
+=======================================
+*/
+
+@keyframes dropItLikeItsHot {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 1000px, 0);
+  }
+}
+
+.dropItLikeItsHot {
+  animation-name: dropItLikeItsHot;
+  animation-duration: 0.5s;
+}
+
+
+/*
+=======================================
+
+gettin' lifted
+
+=======================================
+*/
+
+@keyframes gettinLifted {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 500px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.gettinLifted {
+  animation-name: gettinLifted;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+
+/*
+=======================================
+
+glaucoma 
+
+=======================================
+*/
+
+@keyframes glaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px black;
+    color: transparent;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
+
+.glaucoma {
+  animation-name: glaucoma;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+
+/*
+=======================================
+
+chameleon
+
+=======================================
+*/
+
+@keyframes chameleon {
+
+  0% {
+    color: red;
+  }
+
+  14.2999% {
+    color: orange;
+  }
+
+  28.5999% {
+    color: yellow;
+  }
+
+  42.8998% {
+    color: green;
+  }
+
+  57.1996% {
+    color: blue;
+  }
+
+  71.4995% {
+    color: indigo;
+  }
+
+  85.7994% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.chameleon {
+  animation-name: chameleon;
+  animation-duration: 5s;
+}
+
+
+/*
+=======================================
+
+backdrop 
+
+=======================================
+*/
+
+@keyframes backdrop {
+
+  0% {
+    background-color: red;
+    color: white
+  }
+
+  14.2999% {
+    background-color: orange;
+    color: black
+  }
+
+  28.5999% {
+    background-color: yellow;
+    color: black
+  }
+
+  42.8998% {
+    background-color: green;
+    color: white
+  }
+
+  57.1996% {
+    background-color: blue;
+    color: white
+  }
+
+  71.4995% {
+    background-color: indigo;
+    color: white
+  }
+
+  85.7994% {
+    background-color: violet;
+    color: white
+  }
+  100% {
+    background-color: red;
+    color: white
+  }
+}
+
+.backdrop {
+  animation-name: backdrop;
+  animation-duration: 10s;
+}
+

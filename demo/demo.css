@@ -1,0 +1,156 @@
+html {
+  height: 100%;
+  color: #222;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+hr {
+  border: none;
+  max-width: 400px;
+  margin-top: 2rem;
+  height: 1px;
+  background-color: #f9f9f9;
+  background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+}
+
+
+.center {
+  font-family: 'Monoton', sans-serif;
+  transform: translateY(-50%);
+  text-align: center;
+  position: fixed;
+  margin: 0px auto;
+  width: 100%;
+  z-index: 1;
+  top: 40%;
+}
+
+.center h1 {
+  font-size: 70px;
+  position: relative;
+  margin: 0px;
+}
+
+.center .description {
+  font-family: 'offside';
+  line-height: 22px;
+  font-size: 18px;
+  width: 370px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.select {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+select {
+  transition: background-color 400ms ease;
+  font-size: 14px;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: 'offside';
+  padding-right: 30px;
+  position: relative;
+  outline: 0px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.select:after {
+  content: '▼';
+  padding: 14px 8px;
+  position: absolute;
+  right: 13px;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  font-size: 9px;
+}
+
+button {
+  transition: background-color 400ms ease;
+  font-size: 14px;
+  padding: 10px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background: #fff;
+  font-family: "offside";
+  cursor: pointer;
+  outline: 0px;
+}
+
+button:hover,
+select:hover {
+  background-color: #eee;
+}
+
+.center .links {
+  padding-top: 25px;
+  font-family: "offside";
+  letter-spacing: 0.3px;
+  font-size: 14px;
+}
+
+.center .links a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -2px;
+  color: #777;
+}
+
+.center .links a:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+
+
+@media (max-width: 900px) {
+  .center h1 {
+    font-size: 60px;
+  }
+
+  .center .links a,
+  .center .links {
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .center h1 {
+    font-size: 45px;
+  }
+
+  .center .description {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
