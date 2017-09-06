@@ -20,13 +20,12 @@ hr {
 
 .center {
   font-family: 'Monoton', sans-serif;
-  transform: translateY(-50%);
+  transform: translateY(15%);
   text-align: center;
   position: fixed;
   margin: 0px auto;
   width: 100%;
   z-index: 1;
-  top: 40%;
 }
 
 .center h1 {
