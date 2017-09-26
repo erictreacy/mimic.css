@@ -22,7 +22,7 @@ hr {
     font-family: 'Monoton',sans-serif;
     padding-top: 10%;
     text-align: center;
-    position: auto;
+    position: fixed;
     margin: 0px auto;
     width: 100%;
     z-index: 1;
