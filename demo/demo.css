@@ -132,7 +132,7 @@ select:hover {
 
   .center .links a,
   .center .links {
-    display: block;
+    display: inline-block;
     margin: auto;
     margin-bottom: 12px;
   }
