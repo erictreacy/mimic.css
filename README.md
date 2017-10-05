@@ -43,6 +43,7 @@ What's it mimic?:
 | `glaucoma` | how a person with glaucoma sees (or doesn't) |
 | `chameleon` | a chameleon |
 | `backdrop` | a stage backdrop |
+| `tearDrop` | a tear drop |
 
 
 For example: 
@@ -70,4 +71,3 @@ The MIT License (MIT)
 Special thanks to [Tim Holman](http://tholman.com) & [Dan Eden](http://daneden.me) for the css 
 animations 101 course found on the internet [here](http://tholman.com/obnoxious/) and [here](https://daneden.github.io/animate.css/), respectfully.
 
-Special thanks to [Symbolon](https://thenounproject.com/symbolon/) for the butterfly.
