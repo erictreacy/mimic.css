@@ -683,3 +683,37 @@ backdrop
   animation-duration: 10s;
 }
 
+/*
+=======================================
+
+tearDrop 
+
+=======================================
+*/
+
+
+@keyframes tearDrop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+.tearDrop {
+    animation-name: tearDrop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 5;
+    animation-play-state: running;
+}
