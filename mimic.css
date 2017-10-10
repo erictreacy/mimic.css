@@ -717,3 +717,36 @@ tearDrop
     animation-iteration-count: 5;
     animation-play-state: running;
 }
+
+/*
+=======================================
+
+acidTrip 
+
+=======================================
+*/
+
+
+@keyframes acidTrip {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+.acidTrip {
+  animation-name: acidTrip;
+  color: red;
+  background-image: linear-gradient(50deg, purple, orange);
+  background-clip: text;
+  text-fill-color: transparent;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
+
