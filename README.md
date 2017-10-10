@@ -44,7 +44,7 @@ What's it mimic?:
 | `chameleon` | a chameleon |
 | `backdrop` | a stage backdrop |
 | `tearDrop` | a tear drop |
-| `acidTrip` | a acid trip (coming soon...) |
+| `acidTrip` | a acid trip |
 
 
 For example: 
