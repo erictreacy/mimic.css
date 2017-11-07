@@ -2,6 +2,8 @@
 
 Mimic.css is an css animations library because everyone else is doing it.
 
+!https://github.com/erictreacy/mimic.css/blob/master/images/mimic.png?raw=true
+
 ## How To Use The Darn Thing
 
 Simple, just add the mimic.css stylesheet to the `<head>` of your HTML document as such: 
