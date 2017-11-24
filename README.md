@@ -71,6 +71,6 @@ The MIT License (MIT)
 
 ## Acknowledgments 
 
- [Tim Holman](http://tholman.com) 
- [Dan Eden](http://daneden.me) 
+ * [Tim Holman](http://tholman.com) 
+ * [Dan Eden](http://daneden.me) 
 
