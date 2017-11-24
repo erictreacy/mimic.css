@@ -71,6 +71,6 @@ The MIT License (MIT)
 
 ## Acknowledgments 
 
-Special thanks to [Tim Holman](http://tholman.com) & [Dan Eden](http://daneden.me) for the css 
-animations 101 course found on the internet [here](http://tholman.com/obnoxious/) and [here](https://daneden.github.io/animate.css/), respectfully.
+ [Tim Holman](http://tholman.com) 
+ [Dan Eden](http://daneden.me) 
 
