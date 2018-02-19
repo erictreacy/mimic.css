@@ -68,9 +68,3 @@ Also, you can send me a message on [Twitter](http://twitter.com/voneags) to tell
 
 The MIT License (MIT)
 
-
-## Acknowledgments 
-
- * [Tim Holman](http://tholman.com) 
- * [Dan Eden](http://daneden.me) 
-
