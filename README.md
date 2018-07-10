@@ -51,7 +51,7 @@ What's it mimic?:
 
 For example: 
 ```html
- <h1 class="animated boomerang">BRB</h1>
+ <h1 class="boomerang">BRB</h1>
 ```
 
 ## Want to add a class and/or contribute in some way?
