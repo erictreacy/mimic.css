@@ -1,3 +1,5 @@
+*Currently updating to new version*
+
 # Mimic.css
 
 Mimic.css is an css animations library because everyone else is doing it.
