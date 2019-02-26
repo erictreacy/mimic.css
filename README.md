@@ -56,12 +56,7 @@ For example:
 
 ## Want to add a class and/or contribute in some way?
 
-S W E E T ! 
-
 Just clone it and add away!
-
-New classes will be added as time permits by myself or those who clone. 
-Also, you can send me a message on [Twitter](http://twitter.com/voneags) to tell me to hurry up!
 
 
 ## License
