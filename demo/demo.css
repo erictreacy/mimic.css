@@ -1,4 +1,5 @@
 html {
+  font-family: system-ui, sans-serif;
   height: 100%;
   color: #222;
 }
@@ -19,7 +20,6 @@ hr {
 
 
 .center {
-    font-family: 'Monoton',sans-serif;
     padding-top: 10%;
     text-align: center;
     position: fixed;
@@ -35,7 +35,6 @@ hr {
 }
 
 .center .description {
-  font-family: 'offside';
   line-height: 22px;
   font-size: 18px;
   width: 370px;
@@ -59,7 +58,6 @@ select {
   appearance: none;
   box-sizing: border-box;
   border-radius: 2px;
-  font-family: 'offside';
   padding-right: 30px;
   position: relative;
   outline: 0px;
@@ -93,7 +91,6 @@ button {
   border-radius: 2px;
   border: 1px solid #aaa;
   background: #fff;
-  font-family: "offside";
   cursor: pointer;
   outline: 0px;
 }
@@ -105,7 +102,6 @@ select:hover {
 
 .center .links {
   padding-top: 25px;
-  font-family: "offside";
   letter-spacing: 0.3px;
   font-size: 14px;
 }
