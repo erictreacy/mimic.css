@@ -1,0 +1,942 @@
+/* ================================================
+
+mimic.css
+http://etreacy.me/mimic.css
+MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2017 voneags (Eric Treacy)
+Update 2025
+
+================================================ */
+
+/* Base animation class */
+[class*="mimic"] {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+}
+
+/* Gettin In Yo Face */
+
+@keyframes mimicgettinInYoFace {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100);
+  }
+}
+
+.mimicgettinInYoFace {
+  animation-timing-function: ease-in-out;
+  animation-name: mimicgettinInYoFace;
+  animation-duration: 3s;
+}
+
+/* Airplane Propeller */
+
+@keyframes mimicairplanePropeller {
+  from {
+    transform-origin: center;
+    transform: rotate(-20000deg);
+    opacity: 1;
+  }
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.mimicairplanePropeller {
+  animation-name: mimicairplanePropeller;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Pulsate */
+
+@keyframes mimicpulsate {
+  from {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mimicpulsate {
+  animation-name: mimicpulsate;
+  animation-duration: 5s;
+}
+
+/* Boomerang */
+
+@keyframes mimicboomerang {
+  10% {
+    z-index: 1;
+    transform: rotate(-20deg);
+  }
+  35% {
+    z-index: 1;
+    transform: translate(220%, -55%) scale(0.5) rotate(-200deg);
+  }
+  74% {
+    z-index: -1;
+  }
+  75% {
+    transform: translate(-200%, 55%) scale(0.9) rotate(-860deg);
+  }
+  80% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 1;
+    transform: translate(0%, 0%) rotate(-10deg);
+  }
+}
+
+.mimicboomerang {
+  animation-name: mimicboomerang;
+  animation-duration: 3s;
+}
+
+/* I Wan Chu Back */
+
+@keyframes mimiciWanChuBack {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+    transform: scale3d(0.1, 0.1, 0.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale3d(0.1, 0.1, 0.1);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mimiciWanChuBack {
+  animation-name: mimiciWanChuBack;
+  animation-duration: 3s;
+}
+
+/* Lawn Mower */
+
+@keyframes mimiclawnMower {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateY(12225deg);
+  }
+}
+
+.mimiclawnMower {
+  animation-duration: 5s;
+  animation-name: mimiclawnMower;
+  animation-timing-function: ease-in-out;
+}
+
+/* Swivel Chair */
+
+@keyframes mimicswivelChair {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.mimicswivelChair {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: mimicswivelChair;
+  animation-duration: 2s;
+}
+
+/* Candle In The Wind */
+
+@keyframes mimiccandleInTheWind {
+  0% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0.25;
+    transform: skewX(-10deg);
+  }
+  25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+    transform: skewX(-10deg);
+  }
+  50% {
+    opacity: 0.75;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    transform: skewX(-5deg);
+  }
+  87.5% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mimiccandleInTheWind {
+  opacity: 0;
+  animation-name: mimiccandleInTheWind;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+/* Nope */
+
+@keyframes mimicnope {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-7px) rotateY(-10deg);
+  }
+  18.5% {
+    transform: translateX(6px) rotateY(8deg);
+  }
+  31.5% {
+    transform: translateX(-4px) rotateY(-6deg);
+  }
+  43.5% {
+    transform: translateX(3px) rotateY(4deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.mimicnope {
+  animation-name: mimicnope;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Heart Beat */
+
+@keyframes mimicheartBeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.mimicheartBeat {
+  animation-name: mimicheartBeat;
+  animation-duration: 0.66s;
+  animation-iteration-count: 8;
+  animation-direction: alternate;
+}
+
+/* Sleepy Eyes */
+
+@keyframes mimicsleepyEyes {
+  0% {
+    transform: perspective(400px);
+  }
+  5% {
+    transform: perspective(400px) rotateX(-20deg);
+    opacity: 0.5;
+  }
+  15% {
+    transform: perspective(400px);
+    opacity: 1;
+  }
+  35% {
+    transform: perspective(400px) rotateX(-20deg);
+    opacity: 0.75;
+  }
+  45% {
+    transform: perspective(400px) rotateX(-2deg);
+    opacity: 1;
+  }
+  to {
+    transform: perspective(400px) rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
+.mimicsleepyEyes {
+  animation-name: mimicsleepyEyes;
+  animation-duration: 5s;
+  backface-visibility: visible !important;
+}
+
+/* Plummit */
+
+@keyframes mimicplummit {
+  from {
+    opacity: 1;
+    transform: scale(10);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+
+.mimicplummit {
+  animation-timing-function: ease-in-out;
+  animation-name: mimicplummit;
+  animation-duration: 5s;
+}
+
+/* Drop It Like Its Hot */
+
+@keyframes mimicdropItLikeItsHot {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 1000px, 0);
+  }
+}
+
+.mimicdropItLikeItsHot {
+  animation-name: mimicdropItLikeItsHot;
+  animation-duration: 0.5s;
+}
+
+/* Gettin Lifted */
+
+@keyframes mimicgettinLifted {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 500px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mimicgettinLifted {
+  animation-name: mimicgettinLifted;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+/* Glaucoma */
+
+@keyframes mimicglaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px black;
+    color: transparent;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
+
+.mimicglaucoma {
+  animation-name: mimicglaucoma;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+/* Chameleon */
+
+@keyframes mimicchameleon {
+  0% {
+    color: red;
+  }
+  14.2999% {
+    color: orange;
+  }
+  28.5999% {
+    color: yellow;
+  }
+  42.8998% {
+    color: green;
+  }
+  57.1996% {
+    color: blue;
+  }
+  71.4995% {
+    color: indigo;
+  }
+  85.7994% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.mimicchameleon {
+  animation-name: mimicchameleon;
+  animation-duration: 5s;
+}
+
+/* Backdrop */
+
+@keyframes mimicbackdrop {
+  0% {
+    background-color: red;
+    color: white;
+  }
+  14.2999% {
+    background-color: orange;
+    color: black;
+  }
+  28.5999% {
+    background-color: yellow;
+    color: black;
+  }
+  42.8998% {
+    background-color: green;
+    color: white;
+  }
+  57.1996% {
+    background-color: blue;
+    color: white;
+  }
+  71.4995% {
+    background-color: indigo;
+    color: white;
+  }
+  85.7994% {
+    background-color: violet;
+    color: white;
+  }
+  100% {
+    background-color: red;
+    color: white;
+  }
+}
+
+.mimicbackdrop {
+  animation-name: mimicbackdrop;
+  animation-duration: 10s;
+}
+
+/* Acid Trip */
+
+@keyframes mimicacidTrip {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+.mimicacidTrip {
+  animation-name: mimicacidTrip;
+  color: red;
+  background-image: linear-gradient(50deg, purple, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
+
+/* Spinner */
+
+@keyframes mimicspinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mimicspinner {
+  animation-name: mimicspinner;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+}
+
+/* Page Turn */
+
+@keyframes mimicpageTurn {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1, 1) translate(-50%, -50%);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scale(-1, 1) translate(-50%, -50%);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1, 1) translate(-50%, -50%);
+  }
+}
+
+.mimicpageTurn {
+  animation-name: mimicpageTurn;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+/* Typewriter */
+@keyframes mimictypewriter {
+  from {
+    width: 0;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  to {
+    width: 100%;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.mimictypewriter {
+  animation-name: mimictypewriter;
+  animation-duration: 3s;
+  animation-timing-function: steps(40, end);
+  animation-fill-mode: forwards;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Glitch */
+@keyframes mimicglitch {
+  0% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  2% {
+    transform: translate(-2px, 0);
+    text-shadow: -2px 0 0 #00fffc, 2px 0 0 #fc00ff;
+  }
+  4% {
+    transform: translate(2px, 0);
+    text-shadow: 2px 0 0 #00fffc, -2px 0 0 #fc00ff;
+  }
+  6% {
+    transform: translate(0, 2px);
+    text-shadow: 0 2px 0 #00fffc, 0 -2px 0 #fc00ff;
+  }
+  8% {
+    transform: translate(0, -2px);
+    text-shadow: 0 -2px 0 #00fffc, 0 2px 0 #fc00ff;
+  }
+  10% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  20% {
+    transform: translate(-5px, 0);
+    text-shadow: -5px 0 0 #00fffc, 5px 0 0 #fc00ff;
+  }
+  22% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  44% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  46% {
+    transform: translate(3px, 0);
+    text-shadow: 3px 0 0 #00fffc, -3px 0 0 #fc00ff;
+  }
+  48% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  60% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  62% {
+    transform: translate(0, 3px);
+    text-shadow: 0 3px 0 #00fffc, 0 -3px 0 #fc00ff;
+  }
+  64% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+  100% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #00fffc, 0 0 0 #fc00ff;
+  }
+}
+
+.mimicglitch {
+  animation-name: mimicglitch;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+/* Origami Fold */
+@keyframes mimicorigami {
+  0% {
+    transform: perspective(800px) rotateX(0) rotateY(0);
+  }
+  25% {
+    transform: perspective(800px) rotateX(45deg) rotateY(0);
+  }
+  50% {
+    transform: perspective(800px) rotateX(45deg) rotateY(45deg);
+  }
+  75% {
+    transform: perspective(800px) rotateX(0) rotateY(45deg);
+  }
+  100% {
+    transform: perspective(800px) rotateX(0) rotateY(0);
+  }
+}
+
+.mimicorigami {
+  animation-name: mimicorigami;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+
+/* Liquid */
+@keyframes mimicliquid {
+  0% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scaleY(0.8) scaleX(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scaleY(1.2) scaleX(0.8);
+    opacity: 0.9;
+  }
+  75% {
+    transform: scaleY(0.9) scaleX(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+}
+
+.mimicliquid {
+  animation-name: mimicliquid;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  transform-origin: center center;
+}
+
+/* Shatter */
+@keyframes mimicshatter {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  20% {
+    transform: rotate(0deg);
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  25% {
+    transform: rotate(1deg);
+    clip-path: polygon(0% 0%, 33% 0%, 100% 33%, 100% 100%, 67% 100%, 0% 67%);
+  }
+  50% {
+    opacity: 0.9;
+    clip-path: polygon(0% 0%, 33% 0%, 100% 33%, 100% 100%, 67% 100%, 0% 67%);
+  }
+  75% {
+    opacity: 0.5;
+    clip-path: polygon(0% 33%, 100% 0%, 100% 67%, 0% 100%);
+  }
+  100% {
+    transform: rotate(-2deg);
+    opacity: 0;
+    clip-path: polygon(33% 0%, 67% 0%, 100% 33%, 100% 67%, 67% 100%, 33% 100%, 0% 67%, 0% 33%);
+  }
+}
+
+.mimicshatter {
+  animation-name: mimicshatter;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+/* Elastic */
+@keyframes mimicelastic {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(1.5);
+  }
+  50% {
+    transform: scaleX(0.7);
+  }
+  75% {
+    transform: scaleX(1.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.mimicelastic {
+  animation-name: mimicelastic;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+}
+
+/* Pixelate */
+@keyframes mimicpixelate {
+  0% {
+    filter: blur(0px);
+  }
+  25% {
+    filter: blur(2px);
+  }
+  50% {
+    filter: blur(4px);
+  }
+  75% {
+    filter: blur(2px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.mimicpixelate {
+  animation-name: mimicpixelate;
+  animation-duration: 2s;
+  image-rendering: pixelated;
+}
+
+/* Spotlight */
+@keyframes mimicspotlight {
+  0% {
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.mimicspotlight {
+  animation-name: mimicspotlight;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Gravity */
+@keyframes mimicgravity {
+  0% {
+    transform: translateY(-100px);
+    animation-timing-function: ease-in;
+  }
+  20% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.mimicgravity {
+  animation-name: mimicgravity;
+  animation-duration: 2s;
+}
+
+/* Spiral */
+@keyframes mimicspiral {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+.mimicspiral {
+  animation-name: mimicspiral;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center center;
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+  0% {
+    color: #ff0000;
+    border-color: #ff0000;
+  }
+  10% {
+    color: #ff8000;
+    border-color: #ff8000;
+  }
+  20% {
+    color: #ffff00;
+    border-color: #ffff00;
+  }
+  30% {
+    color: #80ff00;
+    border-color: #80ff00;
+  }
+  40% {
+    color: #00ff00;
+    border-color: #00ff00;
+  }
+  50% {
+    color: #00ff80;
+    border-color: #00ff80;
+  }
+  60% {
+    color: #00ffff;
+    border-color: #00ffff;
+  }
+  70% {
+    color: #0080ff;
+    border-color: #0080ff;
+  }
+  80% {
+    color: #0000ff;
+    border-color: #0000ff;
+  }
+  90% {
+    color: #8000ff;
+    border-color: #8000ff;
+  }
+  100% {
+    color: #ff0000;
+    border-color: #ff0000;
+  }
+}
+
+/* Title Gradient */
+.mimicTitleGradient {
+  color: #ff0000;
+  animation-name: colorChange;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Button Border Gradient */
+.mimicBorderGradient {
+  animation-name: colorChange;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-width: 2px;
+  border-style: solid;
+}
